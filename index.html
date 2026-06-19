@@ -3,27 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="HapTile is a dataset for contact-rich imitation learning that integrates haptic, visual, tactile, and language information.">
+  <meta name="keywords" content="VLA, Haptic, Tactile, Contact-Rich, Imitation Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>HapTile: A Haptic-Informed Vision-Tactile-Language-Action Dataset for Contact-Rich Imitation Learning</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
       dataLayer.push(arguments);
-    }
+    } -->
 
-    gtag('js', new Date());
+    <!-- gtag('js', new Date());
 
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+        rel="stylesheet"> -->
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
@@ -42,7 +42,7 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -80,7 +80,7 @@
     </div>
 
   </div>
-</nav>
+</nav> -->
 
 
 <section class="hero">
@@ -88,8 +88,8 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
-          <div class="is-size-5 publication-authors">
+          <h1 class="title is-1 publication-title"><span class="title-highlight">HapTile</span>: A <span class="title-highlight">Haptic-Informed</span> Vision-<span class="title-highlight">Tactile</span>-Language-Action Dataset for Contact-Rich Imitation Learning</h1>
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
             <span class="author-block">
@@ -109,18 +109,18 @@
             <span class="author-block">
               <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
             </span>
-          </div>
+          </div> -->
 
-          <div class="is-size-5 publication-authors">
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Washington,</span>
             <span class="author-block"><sup>2</sup>Google Research</span>
-          </div>
+          </div> -->
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -129,7 +129,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -138,28 +138,28 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+              <!-- <span class="link-block">
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon)</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                <a href="https://huggingface.co/datasets/HapTile2026/HapTile"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
@@ -176,22 +176,20 @@
 </section>
 
 <section class="hero teaser">
-  <div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
+        <source src="./static/videos/teaser.mov"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <span class="dnerf title-highlight">HapTile</span> modalities and task variations overview.
       </h2>
     </div>
   </div>
 </section>
 
-
+<!-- 
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
@@ -247,7 +245,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="section">
@@ -258,31 +256,33 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Despite the importance of tactile sensing for reliable manipulation, 
+            most existing Vision-Language-Action (VLA) datasets remain vision-only, 
+            and those that do incorporate tactile information typically lack the joint 
+            combination of task diversity, language conditioning, and action trajectories. 
+            Furthermore, existing teleoperation pipelines rarely provide haptic feedback to the operator, 
+            despite its established role in demonstration quality and manipulation stability.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            In this work, we present <span class="dnerf title-highlight">HapTile</span>, 
+            a contact-grounded visuotactile manipulation dataset that advances beyond 
+            vision-only trajectory datasets by embedding physical interaction sensing 
+            at two levels: fingertip tactile feedback at the robot end-effector, and 
+            haptic-informed demonstrations at the teleoperator side. The data collection 
+            platform integrates haptic feedback directly into the teleoperation 
+            controller, enabling the operator to perceive contact interactions in real time. 
+            It is built around a standard and reproducible robotic system equipped with 
+            custom-designed fingertip tactile sensors.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            The dataset comprises everyday manipulation tasks spanning a broad range of 
+            contact-rich skills, including pick-and-place, folding, pressing, stacking, 
+            and other routine activities. Each task is paired with language instructions 
+            that condition the policy on the manipulation objective, together with 
+            synchronized visuotactile observations and action trajectories. In addition, 
+            we provide a benchmarking study on contact-rich policy learning using 
+            two baseline models to evaluate the effectiveness of the proposed 
+            contact-grounded dataset.
           </p>
         </div>
       </div>
@@ -292,10 +292,11 @@
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
+        <h2 class="title is-3">Summary Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <video controls playsinline width="100%">
+            <source src="./static/videos/haptile_video_reduced.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -304,54 +305,376 @@
 </section>
 
 
+
 <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
+      <!-- data collection platform. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Data Collection Platform</h2>
+          <img src="./static/images/fig_setup1.jpg" alt="Setup" style="width: 80%;">
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            The data collection system consists of two components: 
+            (a) <b>a robot-side</b> setup, comprising a UR5e manipulator, 
+            a Robotiq 2F-85 gripper with vision-based tactile sensors, 
+            RGB cameras, and trajectory logging; and 
+            (b) <b>a teleoperator-side</b> setup, using a Meta Quest 
+            headset/controller to command end-effector motion and gripper actions.
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
         </div>
       </div>
-      <!--/ Visual Effects. -->
+      <!--/ data collection platform. -->
 
-      <!-- Matting. -->
+      <!-- tactile sensors. -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
+        <div class="content">
+          <h2 class="title is-3">Vision-Based Tactile Sensor</h2>
+          <img src="./static/images/fig_setup2.jpg" alt="Tactile Sensor" style="width: 95%;">
+          <p>
+            Each gripper finger is equipped with a vision-based 
+            tactile sensor that captures raw tactile images and 
+            tracks embedded marker motion to estimate contact 
+            dynamics. These tactile signals are synchronized with 
+            visual observations and robot actions, providing rich 
+            contact-aware data for manipulation learning.
+          </p>
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
+    <!--/ tactile sensors. -->
+
+    <!-- Data Format. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data Format</h2>
+        <div class="content has-text-justified">
+          <p>
+            Each task folder (e.g., <code>fold_Tshirt/</code>) contains multiple demonstrations (named by date-time).
+            Note that <code>attrs</code>, <code>frames/</code>, and <code>videos/</code> are not real
+            directories — they are HDF5 groups/datasets inside <code>trajectory.h5</code>, accessed in
+            Python via <code>h5py</code>, e.g. <code>trajectory["frames/joint_positions"]</code>.
+          </p>
+          <pre><code>
+        task/
+        ├── 0612_143005/                  # demonstration folder (date-time)
+        │   ├── freq.txt                               # recording frequency metadata
+        │   └── trajectory.h5                          # HDF5 file
+        │       ├── attrs                              # top-level attributes (episode metadata)
+        │       │   ├── frame_count                     # total number of frames in the episode
+        │       │   ├── video_fps                       # recording frame rate 
+        │       │   └── timestamps                      # ISO 8601 datetime string per frame
+        │       ├── frames/                            # HDF5 group: time-series robot state and tactile data
+        │       │   ├── joint_positions                # 7-DOF joint angles (radians)
+        │       │   ├── ee_pos_quat                    # end-effector position + orientation 
+        │       │   ├── gripper_position                # gripper opening, normalised [0–1]
+        │       │   ├── control                        # actions: dims 0–5 = 6-DOF delta pose, dim 6 = gripper
+        │       │   ├── tactile_left_marker_motion      # scalar motion magnitude from left tactile (recorded live)
+        │       │   └── tactile_right_marker_motion     # scalar motion magnitude from right tactile (recorded live)
+        │       ├── language_instructions               # HDF5 group: language instructions for the task
+        │       └── videos/                            # HDF5 group: multi-camera video streams (raw compressed bytes)
+        │           ├── base_camera_rgb_0               # wrist camera RGB stream — raw MP4 bytes
+        │           ├── base_camera_rgb_1               # front camera RGB stream — raw MP4 bytes
+        │           ├── base_camera_depth_0             # depth camera 0 stream — raw MP4 bytes
+        │           ├── base_camera_depth_1             # Depth camera 1 stream — raw MP4 bytes
+        │           ├── tactile_left_rgb                # left tactile RGB stream — raw MP4 bytes
+        │           └── tactile_right_rgb               # right tactile RGB stream — raw MP4 bytes
+        ├── 0612_150241/
+        │   ├── freq.txt
+        │   └── trajectory.h5                          # same internal structure as above
+        │
+        ⋮
+        │
+        └── 0612_204719/
+            ├── freq.txt
+            └── trajectory.h5                          # same internal structure as above</code></pre>
+        </div>
+      </div>
+    </div>
+    <!--/ data format. -->
+
+    <!-- Data quickstart. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset Quickstart</h2>
+        <div class="content has-text-justified">
+          <p>
+            The dataset is hosted on HuggingFace. To download, 
+            extract and visualize the dataset, you can use the 
+            following command lines:
+          </p>
+          <pre><code>            # Clone the repository
+            git clone https://github.com/HapTile-dataset/Dataset_quickstart.git
+            cd Dataset_quickstart
+
+            # Install dependencies
+            pip install -r requirements.txt
+
+            # Run the quickstart script
+            python quickstart.py --task fold_Tshirt.zip --frame 150</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- marker trackings. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Tactile Images and Marker Trackings</h2>
+        <div class="content has-text-justified">
+          <p>
+            RGB tactile images from both fingers are captured at every control step.
+             Contact induces characteristic image changes and marker displacements
+              that encode contact geometry and task-specific interaction forces. 
+              We track these marker displacements online. Displacement relative 
+              to the initial reference is converted into a scalar motion score 
+              that approximates contact-induced deformation and slip. This tactile 
+              motion signal is stored alongside RGB observations and action 
+              trajectories in the dataset, and is also used to drive real-time 
+              haptic feedback during teleoperation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ marker trackings. -->
+
+    <!-- marker tracking video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="hero-body" style="padding-bottom: 0">
+          <video autoplay controls muted loop playsinline>
+            <source src="./static/videos/marker_tracking.mov" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ marker tracking video. -->
+
+    <!-- haptic mechanism. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Haptic Mechanism</h2>
+        <div class="content has-text-justified">
+          <p>
+            To close the perception–action loop during teleoperation, tactile 
+            contact information is fed back to the operator as real-time haptic 
+            vibration through the Meta Quest controller. The tactile motion score 
+            obtained from marker tracking algorithm is normalised and discretely 
+            mapped to vibration amplitude, enabling the operator to feel when 
+            sufficient grip force is established. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ haptic mechanism. -->
+
+    <!-- haptic diagram video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="hero-body" style="padding-bottom: 0">
+          <video autoplay controls muted loop playsinline>
+            <source src="./static/videos/haptic.mov" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ haptic diagram video. -->
+
+    <!-- datacollection procedure -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data Collection Protocol</h2>
+        <div class="content has-text-justified">
+          <p>
+            Data collection follows a structured protocol to promote policy 
+            generalisation and language grounding:
+          </p>
+          <ul>
+            <li><strong>Randomised object poses and target positions</strong> within the workspace, with fixed end-effector reset between episodes</li>
+            <li><strong>Scene diversity</strong> via one or two clutter objects added per scene</li>
+            <li><strong>Two language-specified target states per task</strong>, enabling generalisation splits that verify the policy conditions on language rather than converging to a single outcome</li>
+          </ul> 
+          
+        </div>
+      </div>
+    </div>
+    <!--/ datacollection procedure. -->
+
+    <!-- datacollection  video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="hero-body" style="padding-bottom: 0">
+          <video autoplay controls muted loop playsinline>
+            <source src="./static/videos/datacollection_process.mov" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ datacollection video. -->
+
+    <!-- evaluation procedure -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Evaluation Studies</h2>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate two policy families — a Diffusion Policy baseline and fine-tuned 
+            &pi;<sub>0</sub>​ — on four contact-rich tasks 
+            (bottle turning, whiteboard wiping, liquid pouring, peg insertion) 
+            across three modality configurations: <strong>V-only.</strong> RGB views + proprioception, no tactile;
+            <strong>V+T.</strong> adds raw tactile images from both fingers;
+            <strong>V+TM.</strong> adds marker displacement features for contact geometry and slip.
+          </p>
+        </div>
+
+        <!-- Task1: Turning water bottle -->
+        <div class="content" style="margin-top: 2rem;">
+          <p><strong>Turning a bottle upright</strong></p>
+
+          <!-- Two video+image columns -->
+          <div class="columns is-centered">
+
+            <!-- Diffusion Policy -->
+            <div class="column">
+              <p class="heading" style="margin-bottom: 0.5rem; font-weight: bold; font-size: 1.1rem; font-family: sans-serif;">Diffusion Policy</p>
+              <video autoplay controls muted loop playsinline style="width: 100%;">
+                <source src="./static/videos/turning_bottle_upright_DP.mp4" type="video/mp4">
+              </video>
+              <figure class="image" style="margin-top: 0.5rem;">
+                <img src="./static/images/turning_bottle_upright_DP.jpg" alt="Diffusion Policy result">
+              </figure>
+            </div>
+
+            <!-- Pi_0 -->
+            <div class="column">
+              <p class="heading" style="margin-bottom: 0.5rem; font-weight: bold; font-size: 1.1rem; font-family: sans-serif;">&pi;<sub>0</sub></p>
+              <video autoplay controls muted loop playsinline style="width: 100%;">
+                <source src="./static/videos/turning_bottle_upright_pi0.mp4" type="video/mp4">
+              </video>
+              <figure class="image" style="margin-top: 0.5rem;">
+                <img src="./static/images/turning_bottle_upright_pi0.jpg" alt="Pi_0 result">
+              </figure>
+            </div>
+
+          </div>
+        </div>
+        <!-- /Task1 -->
+
+        <!-- Task2: Wiping a whiteboard -->
+        <div class="content" style="margin-top: 2rem;">
+          <p><strong>Wiping a whiteboard</strong></p>
+
+          <!-- Two video+image columns -->
+          <div class="columns is-centered">
+
+            <!-- Diffusion Policy -->
+            <div class="column">
+              <p class="heading" style="margin-bottom: 0.5rem; font-weight: bold; font-size: 1.1rem; font-family: sans-serif;">Diffusion Policy</p>
+              <video autoplay controls muted loop playsinline style="width: 100%;">
+                <source src="./static/videos/wiping_whiteboard_dp.mp4" type="video/mp4">
+              </video>
+              <figure class="image" style="margin-top: 0.5rem;">
+                <img src="./static/images/wiping_whiteboard_dp.jpg" alt="Diffusion Policy result">
+              </figure>
+            </div>
+
+            <!-- Pi_0 -->
+            <div class="column">
+              <p class="heading" style="margin-bottom: 0.5rem; font-weight: bold; font-size: 1.1rem; font-family: sans-serif;">&pi;<sub>0</sub></p>
+              <video autoplay controls muted loop playsinline style="width: 100%;">
+                <source src="./static/videos/wiping_whiteboard_pi0.mp4" type="video/mp4">
+              </video>
+              <figure class="image" style="margin-top: 0.5rem;">
+                <img src="./static/images/wiping_whiteboard_pi0.jpg" alt="Pi_0 result">
+              </figure>
+            </div>
+
+          </div>
+        </div>
+        <!-- /Task2 -->
+
+        <!-- Task3: Peg insertion -->
+        <div class="content" style="margin-top: 2rem;">
+          <p><strong>Peg insertion</strong></p>
+
+          <!-- Two video+image columns -->
+          <div class="columns is-centered">
+
+            <!-- Diffusion Policy -->
+            <div class="column">
+              <p class="heading" style="margin-bottom: 0.5rem; font-weight: bold; font-size: 1.1rem; font-family: sans-serif;">Diffusion Policy</p>
+              <video autoplay controls muted loop playsinline style="width: 100%;">
+                <source src="./static/videos/peg_insertion_dp.mp4" type="video/mp4">
+              </video>
+              <figure class="image" style="margin-top: 0.5rem;">
+                <img src="./static/images/peg_insertion_dp.jpg" alt="Diffusion Policy result">
+              </figure>
+            </div>
+
+            <!-- Pi_0 -->
+            <div class="column">
+              <p class="heading" style="margin-bottom: 0.5rem; font-weight: bold; font-size: 1.1rem; font-family: sans-serif;">&pi;<sub>0</sub></p>
+              <video autoplay controls muted loop playsinline style="width: 100%;">
+                <source src="./static/videos/peg_insertion_pi0.mp4" type="video/mp4">
+              </video>
+              <figure class="image" style="margin-top: 0.5rem;">
+                <img src="./static/images/peg_insertion_pi0.jpg" alt="Pi_0 result">
+              </figure>
+            </div>
+
+          </div>
+        </div>
+        <!-- /Task3 -->
+
+        <!-- Task4: Pouring liquid -->
+        <div class="content" style="margin-top: 2rem;">
+          <p><strong>Pouring liquid</strong></p>
+
+          <!-- Two video+image columns -->
+          <div class="columns is-centered">
+
+            <!-- Diffusion Policy -->
+            <div class="column">
+              <p class="heading" style="margin-bottom: 0.5rem; font-weight: bold; font-size: 1.1rem; font-family: sans-serif;">Diffusion Policy</p>
+              <video autoplay controls muted loop playsinline style="width: 100%;">
+                <source src="./static/videos/pour_liquid_tactile_dp.mov" type="video/mp4">
+              </video>
+              <figure class="image" style="margin-top: 0.5rem;">
+                <img src="./static/images/pour_liquid_dp.jpg" alt="Diffusion Policy result">
+              </figure>
+            </div>
+
+            <!-- Pi_0 -->
+            <div class="column">
+              <p class="heading" style="margin-bottom: 0.5rem; font-weight: bold; font-size: 1.1rem; font-family: sans-serif;">&pi;<sub>0</sub></p>
+              <video autoplay controls muted loop playsinline style="width: 100%;">
+                <source src="./static/videos/pour_liquid_tactile_pi0.mov" type="video/mp4">
+              </video>
+              <figure class="image" style="margin-top: 0.5rem;">
+                <img src="./static/images/pour_liquid_pi0.jpg" alt="Pi_0 result">
+              </figure>
+            </div>
+
+          </div>
+        </div>
+        <!-- /Task4 -->
+
+      </div>
+    </div>
+    <!--/ evaluation. -->
+
+  </div>
+</section>
+
 
     <!-- Animation. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Animation</h2> -->
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <!-- <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
             We can also animate the scene by interpolating the deformation latent codes of two input
@@ -381,11 +704,11 @@
             <p class="is-bold">End Frame</p>
           </div>
         </div>
-        <br/>
+        <br/> -->
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
         <div class="content has-text-justified">
           <p>
             Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
@@ -402,16 +725,16 @@
             <source src="./static/videos/replay.mp4"
                     type="video/mp4">
           </video>
-        </div>
+        </div> -->
         <!--/ Re-rendering. -->
 
-      </div>
-    </div>
+      <!-- </div>
+    </div> -->
     <!--/ Animation. -->
 
 
     <!-- Concurrent Work. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
@@ -434,52 +757,49 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Concurrent Work. -->
 
   </div>
 </section>
 
+<!-- uncomment after acceptance  -->
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{alian2026haptile,
+  title={HapTile: A Haptic-Informed Vision-Tactile-Language-Action Dataset for Contact-Rich Imitation Learning},
+  author={Alian, Amirhosein and Zhao, Yongqiang and Gu, Shiyi and Zhang, Xuyang and Chen, Zhuo and Mower, Christopher E and Bou-Ammar, Haitham and Luo, Shan},
+  journal={arXiv preprint arXiv:2606.04825},
+  year={2026}
+
 }</code></pre>
   </div>
-</section>
+</section> -->
+
+<!-- uncomment after acceptance  -->
 
 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="./static/videos/haptile.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+          <p class="has-text-centered">
+            This website template is borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>. 
           </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
+          
         </div>
       </div>
     </div>
